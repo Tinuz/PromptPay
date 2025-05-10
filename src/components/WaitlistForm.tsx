@@ -36,10 +36,11 @@ export default function WaitlistForm() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-50">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
-          Be the First to Know When We Launch
+          Get Early Access to PromptPay
         </h2>
         <p className="text-xl text-gray-600 mb-8">
-          Join our waitlist to get early access and exclusive launch offers.
+          Join our waitlist to be among the first to experience stress-free
+          payment collection. Early subscribers get exclusive launch offers.
         </p>
 
         <form onSubmit={handleSubmit} className="max-w-md mx-auto">
@@ -57,13 +58,14 @@ export default function WaitlistForm() {
               disabled={status === "loading"}
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 disabled:opacity-50"
             >
-              {status === "loading" ? "Joining..." : "Join Waitlist"}
+              {status === "loading" ? "Joining..." : "Get Early Access"}
             </button>
           </div>
 
           {status === "success" && (
             <p className="mt-4 text-green-600">
-              Thanks for joining! We&apos;ll be in touch soon.
+              Thanks for joining! We&apos;ll be in touch soon with early access
+              details.
             </p>
           )}
           {status === "error" && (
