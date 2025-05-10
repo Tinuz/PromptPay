@@ -16,7 +16,7 @@ export default function Testimonials() {
     },
     {
       quote:
-        "The analytics feature helps us identify which clients need more attention. It's like having a financial assistant!",
+        "The analytics feature helps us identify which clients need more attention. It&apos;s like having a financial assistant!",
       author: "Emma Rodriguez",
       role: "Small Business Owner",
       company: "Creative Agency",
@@ -32,7 +32,9 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-600 italic mb-4">"{testimonial.quote}"</p>
+              <p className="text-gray-600 italic mb-4">
+                &ldquo;{testimonial.quote}&rdquo;
+              </p>
               <div>
                 <p className="font-semibold text-gray-900">
                   {testimonial.author}

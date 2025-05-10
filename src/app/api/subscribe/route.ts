@@ -13,6 +13,7 @@ export async function POST(request: Request) {
       { status: 200 }
     );
   } catch (error) {
+    console.error("Subscription error:", error);
     return NextResponse.json(
       { message: "Error processing subscription" },
       { status: 500 }

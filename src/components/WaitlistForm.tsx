@@ -27,6 +27,7 @@ export default function WaitlistForm() {
       setStatus("success");
       setEmail("");
     } catch (error) {
+      console.error("Form submission error:", error);
       setStatus("error");
     }
   };
@@ -62,7 +63,7 @@ export default function WaitlistForm() {
 
           {status === "success" && (
             <p className="mt-4 text-green-600">
-              Thanks for joining! We'll be in touch soon.
+              Thanks for joining! We&apos;ll be in touch soon.
             </p>
           )}
           {status === "error" && (
