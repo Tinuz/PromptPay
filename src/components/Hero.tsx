@@ -9,36 +9,49 @@ export default function Hero() {
               effective, and stress-free.
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 mb-8">
-              Get paid faster without chasing clients.
+              Automate payment reminders and improve your cash flow without
+              lifting a finger.
             </p>
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors duration-200">
-              Join the waitlist
+              Get Early Access
             </button>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto lg:mx-0">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <div className="border-b pb-4 mb-4">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-semibold">PP</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">PromptPay</p>
-                  <p className="text-sm text-gray-500">Automated Reminder</p>
-                </div>
-              </div>
+              <h3 className="text-lg font-semibold text-gray-900">
+                Dashboard Overview
+              </h3>
             </div>
             <div className="space-y-4">
-              <p className="text-gray-700">Hi Mark,</p>
-              <p className="text-gray-700">
-                Just a quick reminder that invoice #201 is still open. Could you
-                settle it before Friday?
-              </p>
-              <p className="text-gray-700">Thanks!</p>
-              <div className="pt-4 border-t">
-                <p className="text-sm text-gray-500">
-                  Sent via WhatsApp • Friendly reminder #2
-                </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-sm text-gray-600">Open Invoices</p>
+                  <p className="text-2xl font-bold text-gray-900">€12,450</p>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <p className="text-sm text-gray-600">Paid This Month</p>
+                  <p className="text-2xl font-bold text-gray-900">€8,320</p>
+                </div>
+              </div>
+              <div className="border-t pt-4">
+                <h4 className="text-sm font-medium text-gray-900 mb-2">
+                  Recent Activity
+                </h4>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-600">
+                      Invoice #201 - Design Studio
+                    </span>
+                    <span className="text-red-600">Overdue</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-600">
+                      Invoice #202 - Tech Solutions
+                    </span>
+                    <span className="text-green-600">Paid</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ export default function Testimonials() {
       author: "Sarah Johnson",
       role: "Freelance Designer",
       company: "Design Studio",
+      size: "3-person team",
     },
     {
       quote:
@@ -13,6 +14,7 @@ export default function Testimonials() {
       author: "Michael Chen",
       role: "Founder",
       company: "Tech Solutions",
+      size: "5-person team",
     },
     {
       quote:
@@ -20,11 +22,12 @@ export default function Testimonials() {
       author: "Emma Rodriguez",
       role: "Small Business Owner",
       company: "Creative Agency",
+      size: "8-person team",
     },
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
           Loved by Freelancers and Small Businesses
@@ -42,6 +45,7 @@ export default function Testimonials() {
                 <p className="text-gray-600 text-sm">
                   {testimonial.role}, {testimonial.company}
                 </p>
+                <p className="text-gray-500 text-sm mt-1">{testimonial.size}</p>
               </div>
             </div>
           ))}
